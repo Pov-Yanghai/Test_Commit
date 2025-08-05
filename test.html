@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create my first HTML Document</title>
+    <style>
+        body {
+            background-color: blanchedalmond;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #Hello {
+            background-color: aquamarine;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .grid-item {
+            background-color: lightblue;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        /* .grid-container {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: center;
+               
+            gap:20px;
+
+        }
+        .grid-item {
+            background-color: rgb(192, 192, 230);
+            padding: 20px;
+            border-radius:20px;
+            align-items: center;   
+
+        } */
+
+      
+        ol {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Title and tooltip example -->
+    <h2 title="I'm a header">The title Attribute</h2>
+    <p title="I'm a tooltip">Mouse over this paragraph to display the title attribute as a tooltip.</p>
+
+    <!-- Input form -->
+    <form action="#">
+        <label for="Hello">Name:</label>
+        <input type="text" id="Hello" placeholder="Your name here">
+        <button type="submit">Submit</button>
+    </form>
+
+    <hr>
+
+    <!-- Ordered List Example -->
+    <h3>Steps to Learn HTML</h3>
+    <ol>
+        <li>Learn basic tags: <code>&lt;html&gt;, &lt;head&gt;, &lt;body&gt;</code></li>
+        <li>Understand structure: headings, paragraphs, lists</li>
+        <li>Try forms and input elements</li>
+        <li>Use CSS to style your page</li>
+        <li>Practice with layout like Flexbox and Grid</li>
+    </ol>
+
+    <hr>
+
+    <h3>Contact Form</h3>
+    <form action="#">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" placeholder="Enter your email"><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" rows="4" cols="30" placeholder="Your message here"></textarea><br><br>
+
+        <button type="submit">Send</button>
+    </form>
+
+    <hr>
+
+    <!-- Grid Layout Example -->
+    <h3>My Grid Layout</h3>
+    <div class="grid-container">
+        <div class="grid-item">Grid Item 1</div>
+        <div class="grid-item">Grid Item 2</div>
+        <div class="grid-item">Grid Item 3</div>
+    </div>
+
+</body>
+</html>
